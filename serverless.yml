@@ -1,0 +1,29 @@
+import Foundation
+
+class main {
+    let name: String
+    let version: String
+    var items: [String]
+
+    init(name: String = "jcstaff", version: String = "1.0.0") {
+        self.name = name
+        self.version = version
+        self.items = ["Item 1", "Item 2", "Item 3"]
+    }
+
+    func run() {
+        print("Welcome to \\(name) v\\(version)")
+        print("Items:")
+        for item in items {
+            print("- \\(item)")
+        }
+    }
+
+    func addItem(_ item: String) {
+        items.append(item)
+    }
+
+    func toJSON() -> String? {
+        let data: [String: Any] = [
+            "name": name,
+            "version": version,
