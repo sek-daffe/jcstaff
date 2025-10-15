@@ -35,3 +35,5 @@ Edit `slashDot.toml` to customize slashDot backend and async workers
 # Touch update: 1760517130
 
 # PR Merge: 2025-10-15 - fix/merge-5989
+
+# PR Update: 2025-10-15 - fix/update-5291
